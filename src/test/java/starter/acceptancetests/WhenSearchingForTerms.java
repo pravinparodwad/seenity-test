@@ -30,7 +30,7 @@ class WhenSearchingForTerms {
     }
 
     @Test
-    @DisplayName("Result page title should mention the search term")
+    @DisplayName("Should be able to search for green things")
     void searchForGreenThings() {
         navigate.opensTheHomePage();
 
@@ -40,7 +40,7 @@ class WhenSearchingForTerms {
     }
 
     @Test
-    @DisplayName("Result page title should mention the search term")
+    @DisplayName("Should be able to search for blue things")
     void searchForBlueThings() {
         navigate.opensTheHomePage();
 
