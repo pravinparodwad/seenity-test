@@ -30,13 +30,23 @@ class WhenSearchingForTerms {
     }
 
     @Test
-    @DisplayName("Result page title should mention the search term")
+    @DisplayName("Should be able to search for green things")
     void searchForGreenThings() {
         navigate.opensTheHomePage();
 
         search.searchForTerm("green");
 
         assertThat(search.getTitle()).containsIgnoringCase("green");
+    }
+
+    @Test
+    @DisplayName("Should be able to search for blue things")
+    void searchForBlueThings() {
+        navigate.opensTheHomePage();
+
+        search.searchForTerm("blue");
+
+        assertThat(search.getTitle()).containsIgnoringCase("blue");
     }
 
 }
